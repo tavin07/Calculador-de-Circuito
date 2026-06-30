@@ -22,7 +22,7 @@ Pré-requisito: JDK instalado (Java 8 ou superior).
 
 ```bash
 javac CalculadorCircuito.java
-java calculadorCircuito.CalculadorCircuito
+java CalculadorCircuito
 ```
 
 ## Circuito
