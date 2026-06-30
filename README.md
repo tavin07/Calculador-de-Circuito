@@ -2,6 +2,10 @@
 
 Aplicação desktop em **Java Swing** para análise de um circuito resistivo: um resistor `R1` em série com três resistores `R2` iguais associados em paralelo, alimentados por uma fonte de tensão `E`. A partir dos valores informados, o programa calcula a corrente em um dos ramos paralelos, seu sentido e a energia total dissipada em um intervalo de tempo.
 
+## Interface
+
+![Calculador](Calculador.png)
+
 ## Funcionalidades
 
 - Entrada de `R1`, `R2`, tensão da fonte (`E`) e tempo de análise, com campos que aceitam apenas números.
@@ -17,23 +21,13 @@ Aplicação desktop em **Java Swing** para análise de um circuito resistivo: um
 Pré-requisito: JDK instalado (Java 8 ou superior).
 
 ```bash
-# Compilar
-javac calculadorCircuito/CalculadorCircuito.java
-
-# Executar (a partir da pasta que contém o pacote calculadorCircuito)
+javac CalculadorCircuito.java
 java calculadorCircuito.CalculadorCircuito
 ```
 
-> O arquivo está dentro do pacote `calculadorCircuito`, então o `.java` deve estar em uma pasta com esse nome (ex: `src/calculadorCircuito/CalculadorCircuito.java`) para compilar e rodar corretamente.
+## Circuito
 
-## Estrutura do circuito
-
-```
-        R1
-E ──/\/\/\──┬──/\/\/\── R2 ──┐
-            ├──/\/\/\── R2 ──┤
-            └──/\/\/\── R2 ──┘
-```
+![Circuito](Circuito.png)
 
 - `R2,eq = R2 / 3`
 - `Rtotal = R1 + R2,eq`
